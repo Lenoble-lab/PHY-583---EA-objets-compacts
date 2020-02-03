@@ -173,7 +173,7 @@ On retrouve l'espace-temps plat de Minkowski à grande distance.
 
 \begin_layout Paragraph
 Équation d'Einstein à l'intérieur d'un astre statique à symétrie sphérique
- :
+ (système TOV) :
 \end_layout
 
 \begin_layout Standard
@@ -193,6 +193,28 @@ avec
 \begin_inset Formula 
 \[
 \frac{d\Phi}{dr}=\frac{Gm(r)}{r²}\left(1-\frac{2Gm(r)}{rc^{2}}\right)^{-1}\left(1+4\pi\frac{P(r)r^{3}}{m(r)c^{2}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{dm}{dr}=4\pi r^{2}\rho(r)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{dP}{dr}=-\left(\rho(r)+\frac{P(r)}{c^{2}}\right)\frac{d\Phi}{dr}
 \]
 
 \end_inset
