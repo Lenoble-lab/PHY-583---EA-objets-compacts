@@ -88,7 +88,7 @@ class Schwarzschild(Metric):
             radius = radius*self.Rs
         return (times,radius)
     def fall_eq(self,t,r):
-        return -np.sqrt((1/r-1/self.r0)*(1-1/r)/(1-1/self.r0))
+        return -np.sqrt((1/r-1/self.r0)*((1-1/r)**2)/(1-1/self.r0))
     def fall_propre(self,r0,steps,time,normalized):
         step = time / steps
         if not normalized:
