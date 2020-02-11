@@ -83,10 +83,6 @@
 \end_layout
 
 \begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
 Une particule suit une ligne d'univers 
 \begin_inset Formula $x_{\mu}(\lambda)$
 \end_inset
@@ -147,7 +143,7 @@ et
 \end_layout
 
 \begin_layout Standard
-On obtient avec les équation d'EUler Lagrange, en paramètrant la courbe
+On obtient avec les équation d'Euler Lagrange, en paramètrant la courbe
  avec le temps propre 
 \begin_inset Formula $\tau$
 \end_inset
@@ -184,6 +180,17 @@ Equation du mouvement pour la chute libre :
 
 \begin_layout Standard
 \begin_inset Formula $\frac{dt}{d\tau}=\frac{\sqrt{1-\frac{R_{S}}{r_{0}}}}{1-\frac{R_{S}}{r}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+ds^{2}=-\left(1-\frac{R_{S}}{r}\right)c^{2}d\tilde{t}
+\]
+
 \end_inset
 
 

@@ -263,5 +263,55 @@ c²ln\left(\frac{3\sqrt{1-2\Xi}-\sqrt{1-2\Xi(r/R)²}}{2}\right) & pour\,\,r\leq 
 
 \end_layout
 
+\begin_layout Paragraph
+Calcul pour le diagramme de prolongement
+\end_layout
+
+\begin_layout Standard
+On veut plonger un espace à 3 dimensions dans un espace à deux dimensions.
+ On prend la métrique de Schwarschild.
+ On fixe 
+\begin_inset Formula $\theta=\pi/2$
+\end_inset
+
+ et t constant.
+\end_layout
+
+\begin_layout Standard
+La fonction f à tracer vérifie alors : 
+\begin_inset Formula 
+\[
+1+\left(\frac{\partial f}{\partial r}\right)^{2}=g_{rr}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On résout ensuite selon si on est dans l'étoile ou non.
+ On obtient : 
+\begin_inset Formula $\frac{\partial f}{\partial r}=\frac{1}{\sqrt{\left|\frac{rc^{2}}{2Gm(r)}-1\right|}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ce qui donne 
+\begin_inset Formula 
+\[
+f(r)=\begin{cases}
+2R_{S}\sqrt{\frac{r}{R_{s}}-1}+C & pour\,\,r\leq R\\
+-\sqrt{r^{2}-\frac{3c^{2}}{8\pi G\rho}}+C & pour\,\,r\geq R
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

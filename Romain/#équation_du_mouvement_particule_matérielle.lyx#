@@ -196,5 +196,73 @@ ds^{2}=-\left(1-\frac{R_{S}}{r}\right)c^{2}d\tilde{t}
 
 \end_layout
 
+\begin_layout Standard
+Ces équations sont vérifiées mais ne donnent pas un système facilement intégrabl
+e, surtout pour la composante temporelle.
+\end_layout
+
+\begin_layout Standard
+On a passe alors avec un intégrateur numérique (odeint en python).
+ On lui demande de résoudre l'équation différentielle suivante en 
+\begin_inset Formula $Y=\left(\begin{array}{c}
+r\\
+\dot{r}\\
+t
+\end{array}\right)$
+\end_inset
+
+, où le point signifie 
+\begin_inset Formula $\frac{\partial}{\partial\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\dot{Y}=\left(\begin{array}{c}
+\dot{r}\\
+\dot{\ddot{r}}\\
+\dot{t}
+\end{array}\right)=\left(\begin{array}{c}
+\dot{r}\\
+\frac{-Gm}{r^{2}\dot{r}}\\
+\frac{\sqrt{1-\frac{R_{S}}{r_{0}}}}{1-\frac{R_{S}}{r}}
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cela donne, en unité normalisée : 
+\begin_inset Formula $r'=\frac{r}{R_{s}}$
+\end_inset
+
+ et 
+\begin_inset Formula $t'=\tau\frac{c}{R_{s}}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\dot{Y}=\left(\begin{array}{c}
+\dot{r}\\
+\frac{-c^{2}/2}{r^{2}\dot{r}}\\
+\frac{R_{s}}{c}\frac{\sqrt{1-r_{0}'}}{1-r'}
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

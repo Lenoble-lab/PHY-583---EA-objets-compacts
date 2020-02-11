@@ -169,6 +169,12 @@ Solution de Schwarzschild (valable uniquement en dehors de l'astre
 
 \begin_layout Standard
 On retrouve l'espace-temps plat de Minkowski à grande distance.
+ On peut tracer cette métrique dans un diagramme de plongement mais on aura
+ une divergence pour 
+\begin_inset Formula $r=R_{c}$
+\end_inset
+
+(ce qui est logique car cela correspond au rayon de l'horizon du trou noir).
 \end_layout
 
 \begin_layout Paragraph
@@ -215,6 +221,91 @@ avec
 \begin_inset Formula 
 \[
 \frac{dP}{dr}=-\left(\rho(r)+\frac{P(r)}{c^{2}}\right)\frac{d\Phi}{dr}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Cas d'une étoile homogène :
+\end_layout
+
+\begin_layout Standard
+On prend 
+\begin_inset Formula $\rho(r)=\rho_{c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\begin{align*}
+m(r) & =\begin{cases}
+M(r/R)^{3} & pour\,\,r\leq R\\
+M & pour\,\,r\geq R
+\end{cases}\\
+P(r) & =\begin{cases}
+\rho_{c}\frac{\sqrt{1-2\Xi(r/R)²}-\sqrt{1-2\Xi}}{3\sqrt{1-2\Xi}-\sqrt{1-2\Xi(r/R)²}} & pour\,\,r\leq R\\
+0 & pour\,\,r\geq R
+\end{cases}\\
+\Phi(r) & =\begin{cases}
+c²ln\left(\frac{3\sqrt{1-2\Xi}-\sqrt{1-2\Xi(r/R)²}}{2}\right) & pour\,\,r\leq R\\
+\frac{c²}{2}ln\left(1-2\Xi\frac{R}{r}\right) & pour\,\,r\geq R
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Calcul pour le diagramme de prolongement
+\end_layout
+
+\begin_layout Standard
+On veut plonger un espace à 3 dimensions dans un espace à deux dimensions.
+ On prend la métrique de Schwarschild.
+ On fixe 
+\begin_inset Formula $\theta=\pi/2$
+\end_inset
+
+ et t constant.
+\end_layout
+
+\begin_layout Standard
+La fonction f à tracer vérifie alors : 
+\begin_inset Formula 
+\[
+1+\left(\frac{\partial f}{\partial r}\right)^{2}=g_{rr}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On résout ensuite selon si on est dans l'étoile ou non.
+ On obtient : 
+\begin_inset Formula $\frac{\partial f}{\partial r}=\frac{1}{\sqrt{\left|\frac{rc^{2}}{2Gm(r)}-1\right|}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ce qui donne 
+\begin_inset Formula 
+\[
+f(r)=\begin{cases}
+2R_{S}\sqrt{\frac{r}{R_{s}}-1}+C & pour\,\,r\leq R\\
+\sqrt{r^{2}-\frac{3c^{2}}{8\pi G\rho}}+C & pour\,\,r\geq R
+\end{cases}
 \]
 
 \end_inset
