@@ -333,14 +333,40 @@ D'où :
 \begin_layout Standard
 On résout ensuite en utilisant l'expression de la métrique de Schwarzschild
  : 
-\begin_inset Formula $\frac{\partial f}{\partial r}=\frac{1}{\sqrt{\left|\frac{rc^{2}}{2Gm(r)}-1\right|}}$
+\begin_inset Formula 
+\[
+\frac{\partial f}{\partial r}=\frac{1}{\sqrt{\left|\frac{rc^{2}}{2Gm(r)}-1\right|}}
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Ce qui donne 
+Ce qui donne :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100line%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \[
 f(r)=\begin{cases}
@@ -348,6 +374,11 @@ f(r)=\begin{cases}
 -\sqrt{\frac{3c^{2}}{8\pi G\rho}-r²}+C & pour\,\,r\geq R
 \end{cases}
 \]
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 

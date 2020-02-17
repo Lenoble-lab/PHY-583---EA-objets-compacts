@@ -301,7 +301,8 @@ On veut que
 \begin_inset Formula $ds²_{courbe}=ds²_{espace-temps}$
 \end_inset
 
-, or : 
+, de sorte que la métrique soit respectée.
+ 
 \begin_inset Formula 
 \[
 \begin{cases}
