@@ -78,24 +78,30 @@
 \begin_body
 
 \begin_layout Title
-EA objets compacts
-\end_layout
-
-\begin_layout Section
 Calcul du diagramme de plongement
 \end_layout
 
 \begin_layout Standard
-\begin_inset Quotes fld
-\end_inset
-
 Ce diagramme permet de visualiser la forme du tenseur de Rieamann-Christoffel
- dans l'espace plat euclidien.
- Représentation statique dans lequel l'étoile est au repos.
-\begin_inset Quotes frd
+ dans l'espace plat euclidien, ie la courbure de l'espace temps à proximité
+ d'un objet massique.
+ L'espace-temps étant de dimensions 4, avoir un vision en 3 dimension nécéssite
+ de fixer 2 variables.
+ Ici, on va fixet le temps et 
+\begin_inset Formula $\theta$
 \end_inset
 
+.
+\end_layout
 
+\begin_layout Standard
+On va tout d'abord obtenir les équations de la métrique puis exprimer la
+ fonction que l'on trace.
+ 
+\end_layout
+
+\begin_layout Section
+Obtention de la métrique à l'intérieur et à l'extérieur de l'objet compact
 \end_layout
 
 \begin_layout Standard
@@ -136,7 +142,7 @@ ds^{2}=g_{\mu\nu}dx^{\mu}dx^{\nu}=-N²(r)c²dt²+A²(r)dr²+r²(d\theta²+sin²(
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsection
 Solution de Schwarzschild (valable uniquement en dehors de l'astre 
 \begin_inset Formula $T_{\mu\nu}=0$
 \end_inset
@@ -185,7 +191,7 @@ On retrouve l'espace-temps plat de Minkowski à grande distance.
  de la métrique de Schwarschild).
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsection
 Équation d'Einstein à l'intérieur d'un astre statique à symétrie sphérique
  (système TOV) :
 \end_layout
@@ -271,28 +277,49 @@ c²ln\left(\frac{3\sqrt{1-2\Xi}-\sqrt{1-2\Xi(r/R)²}}{2}\right) & pour\,\,r\leq 
 
 \end_layout
 
-\begin_layout Paragraph
-Calcul pour le diagramme de prolongement
+\begin_layout Section
+Expression de la fonction de plongement
 \end_layout
 
 \begin_layout Standard
 On veut plonger un espace à 3 dimensions dans un espace à deux dimensions.
- On prend la métrique de Schwarschild.
  On fixe 
 \begin_inset Formula $\theta=\pi/2$
 \end_inset
 
- et t constant.
- On veut que 
-\begin_inset Formula $ds²_{courbe}=ds²_{espace-temps}$
+ et on prend t constant.
+ On appelle 
+\begin_inset Formula $f:\mathbb{R}²\rightarrow\mathbb{R}$
 \end_inset
 
-, ce qui impose la relation suivante sur la fonction f que l'on va tracer
- : 
+, la fonction de plongement.
+ 
 \end_layout
 
 \begin_layout Standard
- 
+On veut que 
+\begin_inset Formula $ds²_{courbe}=ds²_{espace-temps}$
+\end_inset
+
+, or : 
+\begin_inset Formula 
+\[
+\begin{cases}
+ds²_{courbe} & =dr²+dz²=dr²+\left(\frac{df}{dr}\right)²dr²\\
+ds²_{espace-temps} & =g_{rr}dr\text{²}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+D'où : 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \[
 1+\left(\frac{\partial f}{\partial r}\right)^{2}=g_{rr}
@@ -304,23 +331,54 @@ On veut plonger un espace à 3 dimensions dans un espace à deux dimensions.
 \end_layout
 
 \begin_layout Standard
-On résout ensuite selon si on est dans l'étoile ou non.
- On obtient : 
-\begin_inset Formula $\frac{\partial f}{\partial r}=\frac{1}{\sqrt{\left|\frac{rc^{2}}{2Gm(r)}-1\right|}}$
+On résout ensuite en utilisant l'expression de la métrique de Schwarzschild
+ : 
+\begin_inset Formula 
+\[
+\frac{\partial f}{\partial r}=\frac{1}{\sqrt{\left|\frac{rc^{2}}{2Gm(r)}-1\right|}}
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Ce qui donne 
+Ce qui donne :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100line%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \[
 f(r)=\begin{cases}
 2R_{S}\sqrt{\frac{r}{R_{s}}-1}+C & pour\,\,r\leq R\\
--\sqrt{r^{2}-\frac{3c^{2}}{8\pi G\rho}}+C & pour\,\,r\geq R
+-\sqrt{\frac{3c^{2}}{8\pi G\rho}-r²}+C & pour\,\,r\geq R
 \end{cases}
 \]
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
