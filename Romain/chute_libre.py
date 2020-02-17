@@ -9,7 +9,7 @@ import scipy.integrate as sc
 c = 1
 R_s = 1
 
-def F_diff(Y, t, r_0 = 5):
+def F_diff(Y, t, r_0 = 0.5):
     return np.array([Y[1], -c**2 /2 /(Y[0]**2), R_s/c * np.sqrt(1-1/r_0) / (1-1/Y[0])])
 
 time = np.linspace(0, 25, 30000)

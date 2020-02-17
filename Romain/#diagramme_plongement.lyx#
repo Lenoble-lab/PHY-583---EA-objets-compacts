@@ -86,9 +86,16 @@ Calcul du diagramme de plongement
 \end_layout
 
 \begin_layout Standard
+\begin_inset Quotes fld
+\end_inset
+
 Ce diagramme permet de visualiser la forme du tenseur de Rieamann-Christoffel
  dans l'espace plat euclidien.
  Représentation statique dans lequel l'étoile est au repos.
+\begin_inset Quotes frd
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -174,7 +181,8 @@ On retrouve l'espace-temps plat de Minkowski à grande distance.
 \begin_inset Formula $r=R_{c}$
 \end_inset
 
-(ce qui est logique car cela correspond au rayon de l'horizon du trou noir).
+(cela correspond au rayon de l'horizon du trou noir, c'est une singularité
+ de la métrique de Schwarschild).
 \end_layout
 
 \begin_layout Paragraph
@@ -275,10 +283,25 @@ On veut plonger un espace à 3 dimensions dans un espace à deux dimensions.
 \end_inset
 
  et t constant.
+ On trace dans 
+\begin_inset Formula $\mathbb{R}²$
+\end_inset
+
+ la fonction f, représentant cet espace temps après avoir fixé t et 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
-La fonction f à tracer vérifie alors : 
+On veut que 
+\begin_inset Formula $ds²_{courbe}=ds²_{espace-temps}$
+\end_inset
+
+, ce qui impose la relation suivante sur la fonction f que l'on va tracer
+ : 
 \begin_inset Formula 
 \[
 1+\left(\frac{\partial f}{\partial r}\right)^{2}=g_{rr}
@@ -304,7 +327,7 @@ Ce qui donne
 \[
 f(r)=\begin{cases}
 2R_{S}\sqrt{\frac{r}{R_{s}}-1}+C & pour\,\,r\leq R\\
--\sqrt{r^{2}-\frac{3c^{2}}{8\pi G\rho}}+C & pour\,\,r\geq R
+-\sqrt{\frac{3c^{2}}{8\pi G\rho}-r²}+C & pour\,\,r\geq R
 \end{cases}
 \]
 
