@@ -67,7 +67,7 @@
 \papersides 1
 \paperpagestyle default
 \tracking_changes false
-\output_changes false
+\output_changes true
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
@@ -149,6 +149,106 @@ f(r)=a(t)\sqrt{1-u²}+cstte
 
 \begin_layout Standard
 On retrouve bien l'équation d'un demi-cercle.
+\end_layout
+
+\begin_layout Subsection
+Evolution de la métrique
+\end_layout
+
+\begin_layout Standard
+Le temps propre d'une horloge pour toute coodronnée comobile de l'étoile
+ en effondrement vaut : 
+\begin_inset Formula 
+\[
+\tau(\eta)=\sqrt{\frac{R_{i}³}{8M}}\left(\eta+sin(\eta)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+L'effondrement commence pour 
+\begin_inset Formula $\eta=0$
+\end_inset
+
+ et se termine à la singularité, pour 
+\begin_inset Formula $(R=0,\,\eta=\pi)$
+\end_inset
+
+.
+ Le temps de chute libre vaut : 
+\begin_inset Formula $\Delta\tau=\pi\sqrt{\frac{R_{i}³}{8M}}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+On trouve (cf livre gravitation) que le paramètre 
+\begin_inset Formula $a(\tau)$
+\end_inset
+
+ suit la loi suivante : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a(\tau)=\frac{a_{m}}{2}\left(1+cos(\eta\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\tau(\eta)=\frac{a_{m}}{2}(\eta+sin(\eta))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Prolongement par la métrique de Schwarzschild en dehors de l'étoile
+\end_layout
+
+\begin_layout Standard
+La solution cosmologique utilisée suppose que l'espace est isotrope et homogène,
+ ce qui n'est pas le cas ici : l'isotropie et l'homogénéité ne sont pas
+ vérifié à la surface de l'étoile.
+ La surface de l'étoile correspond à 
+\begin_inset Formula $\chi=\chi_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Si l'on suppose que la presion est nulle à l'intérieur de l'étoile, un raccordem
+ent est possible si et seulement si : 
+\begin_inset Formula 
+\[
+\begin{cases}
+R_{i} & =a_{m}sin(\chi_{0})\\
+M & =\frac{a_{m}}{2}sin³(\chi_{0})
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body
