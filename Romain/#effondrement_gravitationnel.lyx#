@@ -67,7 +67,7 @@
 \papersides 1
 \paperpagestyle default
 \tracking_changes false
-\output_changes true
+\output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
@@ -240,14 +240,6 @@ M & =\frac{a_{m}}{2}sin³(\chi_{0})
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
 
 \end_layout
 
